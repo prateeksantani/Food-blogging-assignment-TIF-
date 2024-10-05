@@ -1,7 +1,10 @@
 import React from "react";
 import { Box, Text, Link, Flex, VStack, HStack, Image } from "@chakra-ui/react";
-import logo from "../assets/logo.svg"; // Add your logo if needed\
+import logo from "../assets/logo.svg"; // Add your logo if needed
 import "../App.css";
+import meta from '../assets/meta.png'
+import twitter from '../assets/x.png'
+import instagram from '../assets/insta.png'
 
 function Footer() {
   return (
@@ -9,15 +12,20 @@ function Footer() {
       as="footer"
       bg="white"
       width="100%"
-      height={["auto", "auto"]}
+      height={["auto", "362px"]}
       p={10}
       position="relative"
     >
+      {/* Logo for Desktop View */}
+      <Flex display={["none", "flex"]} mb={4}>
+        <Image src={logo} alt="Logo" boxSize="100px" marginLeft={30} />
+      </Flex>
+
       {/* Desktop View */}
       <Flex justify="space-around" display={["none", "flex"]}>
         <VStack spacing={4} align="start">
           <Text
-            fontSize="18.8433px"
+            fontSize="18px"
             fontWeight="600"
             color="#0E2368"
             lineHeight="27px"
@@ -71,13 +79,13 @@ function Footer() {
           </Text>
           <HStack spacing={6}>
             <Link>
-              <Image src="/assets/instagram-icon.svg" alt="Instagram" />
+              <Image src={instagram} alt="Instagram" />
             </Link>
             <Link>
-              <Image src="/assets/twitter-icon.svg" alt="Twitter" />
+              <Image src={twitter} alt="Twitter" />
             </Link>
             <Link>
-              <Image src="/assets/facebook-icon.svg" alt="Facebook" />
+              <Image src={meta} alt="Facebook" />
             </Link>
           </HStack>
         </VStack>
@@ -85,7 +93,8 @@ function Footer() {
 
       {/* Mobile View */}
       <VStack display={["flex", "none"]} spacing={10} align="center">
-        <Image src={logo} alt="Logo" boxSize="60px" />
+        <Image src={logo} alt="Logo" boxSize="60px" mt={4} />{" "}
+        {/* Add margin-top here */}
         <VStack spacing={2} align="center">
           <Text
             fontSize="18.8433px"
@@ -106,7 +115,6 @@ function Footer() {
             (904) 443-0343
           </Text>
         </VStack>
-
         <VStack spacing={2} align="center">
           <Text
             fontSize="18.8433px"
@@ -129,7 +137,6 @@ function Footer() {
             Contact Us
           </Link>
         </VStack>
-
         <VStack spacing={4} align="center">
           <Text
             fontSize="18.8433px"
@@ -141,17 +148,16 @@ function Footer() {
           </Text>
           <HStack spacing={6}>
             <Link>
-              <Image src="/assets/instagram-icon.svg" alt="Instagram" />
+              <Image src={instagram} alt="Instagram" />
             </Link>
             <Link>
-              <Image src="/assets/twitter-icon.svg" alt="Twitter" />
+              <Image src={twitter} alt="Twitter" />
             </Link>
             <Link>
-              <Image src="/assets/facebook-icon.svg" alt="Facebook" />
+              <Image src={meta} alt="Facebook" />
             </Link>
           </HStack>
         </VStack>
-
         <Text fontSize="14px" color="#444957" textAlign="center">
           © 2022 Food Truck Example
         </Text>
