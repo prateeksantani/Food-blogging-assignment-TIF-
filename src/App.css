@@ -36,3 +36,242 @@
     transform: rotate(360deg);
   }
 }
+
+/* App.css */
+
+@media (max-width: 768px) {
+  .hero-section {
+    padding-bottom: 80px; /* More spacing for mobile */
+  }
+}
+
+/* Desktop Styles */
+.discover-text {
+  position: absolute;
+  width: 400px;
+  height: 207px;
+  left: 100px;
+  top: 227px;
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 700;
+  font-size: 62px;
+  line-height: 69px;
+  color: #0e2368;
+}
+
+.highlight {
+  color: #e23744; /* The color for the word "Best" */
+  font-weight: 700; /* Make it bold, if desired */
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+  .discover-text {
+    position: absolute; /* Keep it absolute */
+    width: 240px;
+    height: 130px;
+    left: 67px;
+    top: 489px; /* Adjust the position as needed */
+    font-family: "Source Sans Pro", sans-serif; /* Ensure you import this font */
+    font-weight: 700;
+    font-size: 38px;
+    line-height: 46px; /* Adjust line-height */
+    text-align: center; /* Center the text */
+    color: #0e2368;
+  }
+}
+
+.natural-health-text {
+  position: absolute;
+  width: 345px;
+  height: 55px;
+  left: 100px;
+  top: 500px;
+  font-family: "Open Sans", sans-serif; /* Make sure to import the font */
+  font-weight: 400;
+  font-size: 16.4447px;
+  line-height: 27px;
+  color: #444957; /* Body color */
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+  .natural-health-text {
+    position: absolute;
+    width: 249px;
+    height: 36px;
+    left: 63px;
+    top: 640px; /* Adjust the position as needed */
+    font-family: "Open Sans", sans-serif; /* Make sure to import the font */
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 18px; /* Adjust line-height */
+    text-align: center; /* Center the text */
+    color: #444957; /* Body color */
+  }
+}
+
+.explore-button {
+  display: flex !important;
+  flex-direction: row !important;
+  justify-content: center !important;
+  align-items: center !important;
+  padding: 14px 34px !important;
+  gap: 7px !important;
+
+  position: absolute !important;
+  width: 190px !important;
+  height: 63px !important;
+  left: 97px !important;
+  top: 630px !important;
+
+  background: #e23744 !important;
+  border-radius: 34px !important;
+
+  font-family: "Open Sans", sans-serif !important;
+  font-weight: 700 !important;
+  font-size: 18px !important;
+  line-height: 36px !important;
+  color: white !important;
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+  .explore-button {
+    padding: 12px 30px !important;
+    width: 120px !important;
+    height: 40px !important;
+    left: 127px !important;
+    top: 704px !important;
+
+    border-radius: 30px !important;
+    font-size: 14px !important;
+    line-height: 24px !important;
+  }
+}
+
+.about-us-section {
+  position: relative;
+  width: 100%;
+  height: 467px;
+  margin-top: 186px; /* Adjust this to 186px gap from the Hero section */
+  gap: 0px;
+
+  background: linear-gradient(
+    90.07deg,
+    rgba(30, 42, 93, 0.04) 30.91%,
+    rgba(48, 62, 130, 0.04) 64.79%,
+    rgba(60, 80, 157, 0.04) 91.94%
+  );
+}
+
+.about-us-image {
+  position: absolute;
+  width: 384px;
+  height: 468px;
+  left: 205px;
+  top: 0px; /* Position the image at the top of the About Us section */
+}
+
+/* Hide image on mobile */
+@media (max-width: 768px) {
+  .about-us-image {
+    display: none;
+  }
+}
+
+.highlight {
+  color: #e23744; /* The color for the word "Best" */
+  font-weight: 700; /* Make it bold, if desired */
+}
+
+/* App.css */
+
+/* About Us Box */
+.about-us-box {
+  position: absolute; /* Position the box absolutely */
+  width: 447px; /* Fixed width for desktop */
+  height: 254px; /* Fixed height for desktop */
+  top: 100px; /* Set the top position for desktop */
+  left: 789px; /* Set the left position for desktop */
+  gap: 21px; /* Gap between elements for desktop */
+  opacity: 1; /* Set opacity to 1 (visible) */
+  display: flex; /* Use flexbox for layout */
+  flex-direction: column; /* Stack elements vertically */
+  border-radius: 0; /* No border radius for desktop */
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+  .about-us-box {
+    width: 275px; /* Fixed width for mobile */
+    height: 235px; /* Fixed height for mobile */
+    top: 50px; /* Set the top position for mobile */
+    left: 50px; /* Set the left position for mobile */
+    gap: 0px; /* Gap between elements for mobile */
+    border-radius: 27px 0 0 0; /* Border radius for mobile */
+    opacity: 1; /* Set opacity to 1 (visible) */
+  }
+}
+
+.about-us-text {
+  color: #0e2368;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  text-align: center; /* Default for mobile */
+}
+
+.about-us-text.desktop {
+  position: absolute; /* Default for desktop */
+  font-size: 45px;
+  line-height: 27px;
+  height: 26px;
+}
+
+.about-us-text.mobile {
+  position: absolute; /* Specific for mobile */
+  width: 120px;
+  height: 35px;
+  font-size: 26px;
+  line-height: 35px;
+  left: 75px; /* Positioning for mobile */
+  top: 10px; /* Positioning for mobile */
+  text-align: center;
+}
+
+.about-us-textt {
+  margin-top: 100px; /* Default margin-top */
+}
+
+/* Adjust margin for larger screen sizes */
+@media (min-width: 768px) {
+  .about-us-text {
+    margin-top: 30px; /* Smaller margin on tablet/desktop */
+  }
+}
+
+
+.pagination{
+  margin-top: 1000px;
+}
+
+
+footer {
+  position: absolute;
+  width: 1440px;
+  height: 362px;
+}
+
+/* Contact Us, More, and Social Links Titles */
+.contact-title {
+  position: absolute;
+  width: 94px;
+  height: 27px;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 600;
+  font-size: 18.8433px;
+  line-height: 27px;
+  letter-spacing: 0.03em;
+  color: #0E2368;
+}
